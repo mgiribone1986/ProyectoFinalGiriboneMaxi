@@ -1,3 +1,5 @@
+
+
 import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
@@ -11,16 +13,5 @@ export const authGuard:CanActivateFn = (route, state) => {
   const authService = inject(AuthService);
   const isAuth = authService.verifyToken();
   return isAuth || router.createUrlTree(['auth']);
- // return router.createUrlTree(['auth'])
-
-//  return authService.authUser$.pipe(
-  //map((authUser) => {
-    //if (!authUser) {
-    //return router.createUrlTree(['auth']);
-    //}
-    //return true;
-     // map((authUser) => (!authUser ? router.createUrlTree(['auth']) : true)) FORMA  CORTA
-  //})
-   //);
 };
 

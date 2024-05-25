@@ -19,10 +19,10 @@
         <mat-icon>homee</mat-icon>
         <span>Inicio</span>
       </a>
-      <a routerLink="users" mat-button class="menu-link">
         <!--linea para no mostrar contenido del menu 
         <a *ngif="(authuser$ | async)?.role === 'ADMIN'" routerLink="users" mat-button class="menu-link">
         -->
+      <a routerLink="users" mat-button class="menu-link">
         <mat-icon>people</mat-icon>
         <span>Usuarios</span>
       </a>
@@ -30,6 +30,13 @@
         <mat-icon>leaderboard</mat-icon>
         <span>Ranking</span>
       </a>
+
+  
+      <a routerLink="sales" mat-button class="menu-link">
+        <mat-icon>leaderboard</mat-icon>
+        <span>Ventas</span>
+      </a>
+
       <a (click)="logout()" mat-button class="menu-link">
         <mat-icon>exit_to_app</mat-icon>
         <span>Cerrar sesión</span>

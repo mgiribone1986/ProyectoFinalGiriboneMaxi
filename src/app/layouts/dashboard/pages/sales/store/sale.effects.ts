@@ -28,3 +28,4 @@ export class SaleEffects {
 
   constructor(private actions$: Actions, private salesService: SalesService) {}
 }
+

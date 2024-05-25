@@ -15,6 +15,8 @@ import { SharedModule } from '../../shared/shared.module';
 import { ProductsModule } from './pages/products/products.module';
 import { Clase09RxjsModule } from './pages/clase-09-rxjs/clase-09-rxjs.module';
 import { Clase10Rxjs2Module } from './pages/clase-10-rxjs-2/clase-10-rxjs-2.module';
+
+
 @NgModule({
   declarations: [DashboardComponent],
   imports: [
