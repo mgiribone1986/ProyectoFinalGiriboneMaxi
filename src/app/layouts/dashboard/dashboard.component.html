@@ -1,0 +1,105 @@
+<!-- COLORES DE ANGULAR MATERIAL
+
+- primary: primaria
+- accent: secundaria
+- warn: errores
+
+-->
+
+<mat-drawer-container class="example-container" autosize>
+  <!-- SIDEBAR -->
+  <mat-drawer
+    [opened]="!isMobile()"
+    #drawer
+    class="example-sidenav"
+    [mode]="isMobile() ? 'over' : 'side'"
+  >
+    <mat-nav-list>
+      <a mat-button class="menu-link" routerLink="/home">
+        <mat-icon>homee</mat-icon>
+        <span>Inicio</span>
+      </a>
+      <a routerLink="users" mat-button class="menu-link">
+        <!--linea para no mostrar contenido del menu 
+        <a *ngif="(authuser$ | async)?.role === 'ADMIN'" routerLink="users" mat-button class="menu-link">
+        -->
+        <mat-icon>people</mat-icon>
+        <span>Usuarios</span>
+      </a>
+      <a routerLink="ranking" mat-button class="menu-link">
+        <mat-icon>leaderboard</mat-icon>
+        <span>Ranking</span>
+      </a>
+      <a (click)="logout()" mat-button class="menu-link">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Cerrar sesión</span>
+      </a>
+    </mat-nav-list>
+  </mat-drawer>
+  <!-- SIDEBAR -->
+
+  <!-- CONTENIDO A LA DERECHA DEL SIDEBAR -->
+  <div class="example-sidenav-content">
+    <!-- TOOLBAR SUPERIOR -->
+    <mat-toolbar color="primary">
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-between align-items-center w-50">
+      <div class="col-9">
+        <button
+          (click)="drawer.toggle()"
+          mat-icon-button
+          class="example-icon"
+          aria-label="Example icon-button with menu icon"
+        >
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>GiriboneMaxi Academy </span>
+      </div>
+     
+        <!-- ANGULAR 16-->
+       
+        <!--<div  class="col-3" *ngIf="authUserSinPipe">{{ authUserSinPipe?.firstName }}</div>-->
+        <!-- ANGULAR 17-->
+        <!-- @if (authUser$ | async; as user) {
+        <div>{{ user?.firstName }}</div>
+        
+        } -->
+        <a routerLink="#" mat-button class="menu-link" style="display: flex; align-items: center;">
+          <mat-icon>account_circle</mat-icon>
+          <span *ngIf="authUserSinPipe" style="margin-left: 5px;">Hola  {{authUserSinPipe?.firstName }} Usted es un {{ authUserSinPipe?.role }}</span>
+        </a>
+      </div>
+  </div>
+</mat-toolbar>
+
+    <main style="padding: 1rem">
+      <!-- <div>
+        <button (click)="login()" color="primary" mat-flat-button>
+          Iniciar sesion
+        </button>
+        <button (click)="logout()" color="warn" mat-flat-button>
+          Cerrar sesion
+        </button>
+      </div>
+
+      <button (click)="mostrarComponent = !mostrarComponent">
+        alternar componente
+      </button> -->
+
+      <!-- <app-clase-10-rxjs-2 *ngIf="mostrarComponent" /> -->
+      <!-- <h2>componente clase 09</h2>
+      <app-clase-09-rxjs />
+      <hr />
+      <h2>componente productos</h2>-->
+      <!-- <app-products /> -->
+      <!-- <app-users /> -->
+      <!-- <app-pipes-y-directivas /> -->
+
+      <!-- /dashboard -->
+      <router-outlet />
+    </main>
+
+    <!-- TOOLBAR SUPERIOR -->
+  </div>
+  <!-- CONTENIDO A LA DERECHA DEL SIDEBAR -->
+</mat-drawer-container>

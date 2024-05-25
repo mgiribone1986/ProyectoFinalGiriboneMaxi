@@ -1,0 +1,19 @@
+<mat-spinner *ngIf="loading"></mat-spinner>
+<!--
+<div [ngClass]="!loading ? 'd-block' : 'd-none'">
+  <h1>Detalles del usuario: NOMBRE</h1>
+  <pre>{{ user$ | async | json }}</pre>
+</div>
+-->
+<div [ngClass]="{ 'd-block': !loading, 'd-none': loading }">
+  <h1>Detalles del usuario</h1>
+  <h3>Nombre:  {{ (user$ | async)?.firstName }} </h3>
+  <h3>Apellido: {{ (user$ | async)?.lastName }} </h3>
+  <h3>Email: {{ (user$ | async)?.email }} </h3>
+  <h3>Sanciones: {{ (user$ | async)?.sanciones }} </h3>
+  <h3>Rol: {{ (user$ | async)?.role }} </h3>
+  <h3>Fecha de Creacion: {{ (user$ | async)?.createdAt }}</h3>
+  <pre>{{ user$ | async | json }}</pre>
+</div>
+
+<!-- <button (click)="cambiarParametro()">cambiar param</button> -->

@@ -1,0 +1,33 @@
+
+/* Estilos para el botón de inicio de sesión */
+.button {
+    color: #f1666b !important;
+    background-color: black !important;
+    border-color: #f1666b !important;
+ 
+  }
+
+  .buttonlogin:hover {
+    background-color: grey ; /* Cambio de color de fondo al pasar el mouse */
+    color: white;
+  }
+  
+  /* Estilos para el footer */
+  .mat-card-footer {
+    background-color: #f0f0f0 ; /* Color de fondo del footer */
+    padding: 20px ; /* Espaciado interno del footer */
+  }
+  
+  .mat-card-footer p {
+    margin: 0 ; /* Eliminar el margen del párrafo dentro del footer */
+  }
+  
+  .footer-icons {
+    margin-top: 10px ; /* Espaciado superior para los iconos del footer */
+  }
+  
+  .footer-icons i {
+    margin-right: 10px; /* Espaciado derecho entre los iconos del footer */
+    font-size: 1.5em; /* Tamaño de los iconos del footer */
+  }
+  
