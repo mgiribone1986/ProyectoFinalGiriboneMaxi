@@ -1,0 +1,49 @@
+.example-container {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav {
+    width: 200px;
+  }
+  
+  .example-sidenav-content {
+    height: 100%;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+  
+  
+  a.mat-list-item {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .icono-inicio {
+    margin-right: 8px;
+  }
+  
+  .texto-inicio {
+    vertical-align: middle; 
+  }
+  .button {
+    background-color: black; 
+    color: #f1666b; 
+  }
+
+  .matspinner{
+    color:#f1666b
+  }
+
+ 
+.mat-spinner-color {
+    color: #f1666b !important;
+  }
+  
+  
+  .mat-dialog-content-confirm {
+    color: #f1666b !important;
+  }

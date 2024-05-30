@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "de6d",
+      "firstName": "Leo",
+      "lastName": "Matioli",
+      "email": "dead999@yahoo.com",
+      "sanciones": 3,
+      "role": "ADMIN",
+      "createdAt": "2024-05-12T12:00:00.000Z"
+    },
+    {
+      "id": "ae6d",
+      "firstName": "Roberto",
+      "lastName": "Carlos",
+      "email": "1000000@friends.com",
+      "sanciones": 3,
+      "role": "USER",
+      "createdAt": "2024-05-12T12:00:00.000Z"
+    },
+    {
+      "id": "be6d",
+      "firstName": "Marcos",
+      "lastName": "Sogtulakk",
+      "email": "sanitarios@acidos.com",
+      "sanciones": 4,
+      "role": "USER",
+      "createdAt": "2024-05-12T12:00:00.000Z"
+    },
+    {
+      "id": "ce6d",
+      "firstName": "Mica",
+      "lastName": "Kitah",
+      "email": "micayosoy@instagramer.com",
+      "sanciones": 5,
+      "role": "ESTUDIANTE",
+      "createdAt": "2024-05-12T12:00:00.000Z"
+    },
+    {
+      "id": "fe6d",
+      "firstName": "Dina",
+      "lastName": "Marca",
+      "email": "filosofiayletras@dana.dk",
+      "sanciones": 5,
+      "role": "PROFESOR",
+      "createdAt": "2024-05-12T12:00:00.000Z"
+    },
+    {
+      "id": "be0c",
+      "firstName": "Maxi",
+      "lastName": "Api",
+      "email": "api@gmail.com",
+      "sanciones": "66",
+      "role": "USER",
+      "createAt": "2024-05-12T23:38:47.782Z"
+    }
+  ],
+  "sales": [],
+  "roles": []
+}

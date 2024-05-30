@@ -1,0 +1,49 @@
+
+
+<main style="height: 100vh; ">
+  <div class="d-flex justify-content-center align-items-center h-100">
+    <div class="w-6">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title> Iniciar sesion </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div>
+              <mat-form-field class="w-100">
+                <mat-label>Email mirar footer mail</mat-label>
+                <input formControlName="email" matInput />
+              </mat-form-field>
+            </div>
+            <div>
+              <mat-form-field class="w-100">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" matInput />
+              </mat-form-field>
+            </div>
+            <button class="button" type="submit" color="primary" mat-flat-button>
+              Iniciar sesion
+            </button>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <mat-card class="mat-card-footer">
+        <mat-card-footer>
+          <p><code>Página Fabricada en 1999 Marca Registrada® <strong>giriboneMaxi&#64;giribonemaxiacademy.org</strong> También puedes encontrarnos en Twitter, Twitch,ICQ live, MSN, Instagram, YouTube y tomarte un cafecito con nosotros. SI NO SABES tu usuario te regalamos uno email&#64;mail.com  pwd 123456</code></p>
+          <div class="footer-icons">
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+          </div>
+        </mat-card-footer>
+      </mat-card>
+    </div>
+  </div>
+
+
+  
+</main>

@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <mat-card> 
+          <mat-card-content>
+            <div class="col-md-12">
+                <h3>Tabla de sanciones</h3>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-">
+                    <p>Cada alumno cuenta con un límite de sanciones de un máximo de 50 amonestaciones. <strong>Aquellos alumnos que superen las 50 amonestaciones serán expulsados sin excepción. No comprometa al personal, Liliana.</strong></p>
+                    <p>Gracias, la Academia...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      
+        <div>
+          <div>
+            <!--Tabla Puntajes-->        
+            <table mat-table [dataSource]="sanciones" class="mat-elevation-z8">
+          
+              <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef>No.</th>
+                <td mat-cell *matCellDef="let sancion">{{ sancion.id }}</td>
+              </ng-container>
+          
+              <ng-container matColumnDef="valor">
+                <th mat-header-cell *matHeaderCellDef>Valor</th>
+                <td mat-cell *matCellDef="let sancion">{{ sancion.valor }}</td>
+              </ng-container>
+          
+              <ng-container matColumnDef="descripcion">
+                <th mat-header-cell *matHeaderCellDef>Descripción</th>
+                <td mat-cell *matCellDef="let sancion">{{ sancion.descripcion }}</td>
+              </ng-container>
+          
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            
+            </table> 
+            <br>
+          <div>        
+            <mat-card>
+              <mat-card-content>
+                <p>Ante la toma de licencias reiteradas de nuestro programador por burnout, se recomienda enviar nuevas sanciones a bienestarRRHH&#64;giribonemaxiacademy.org. También puedes encontrarnos en Twitter, Twitch, Instagram, YouTube y tomarte un cafecito con nosotros.</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div>   
+          <div>      
+            <br> 
+            <mat-card class="mat-card-footer">
+              <mat-card-footer>
+                <p><code>Página Fabricada en 1999 Marca Registrada® <strong>giriboneMaxi&#64;giribonemaxiacademy.org</strong> También puedes encontrarnos en Twitter, Twitch, Instagram, YouTube y tomarte un cafecito con nosotros.</code></p>
+                <div class="footer-icons">
+                  <i class="bi bi-youtube"></i>
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-twitter-x"></i>
+                </div>
+              </mat-card-footer>
+            </mat-card>
+
+      </div>
+    </div>
+  </div>
+</div>
