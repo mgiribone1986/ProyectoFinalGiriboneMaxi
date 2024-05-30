@@ -59,7 +59,11 @@ export class UsersService {
 
   }
   getUsers(): Observable<IUser[]> {
+<<<<<<< HEAD
     return this.httpClient.get<IUser[]>('http://localhost:4200/users')
+=======
+    return this.httpClient.get<IUser[]>('http://localhost:3000/users')
+>>>>>>> origin/master
     //return of(USERS_DB).pipe(delay(1500));
     // return throwError(() => new Error('Error al cargar los usuarios')).pipe(
     //   catchError((err) => of(err))
@@ -67,7 +71,11 @@ export class UsersService {
   }
 
   getUserById(id: number): Observable<IUser | undefined> {
+<<<<<<< HEAD
     return this.httpClient.get<IUser>(`http://localhost:4200/users/${id}`); 
+=======
+    return this.httpClient.get<IUser>(`http://localhost:3000/users/${id}`); 
+>>>>>>> origin/master
 
     //return of(USERS_DB.find((el) => el.id === id)).pipe(delay(1500));
   }
